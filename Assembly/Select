@@ -1,0 +1,80 @@
+.data
+		vetor: .skip 10
+
+		.equ button, 0x2050 # Endereço base dos botões
+		.equ colunas, 0x2030 # Endereço base para a coluna
+		.equ linhas, 0x2040 # Endereço base para as linhas
+
+		.equ init1, 0b00111000 # (0011 N DH X IS) -> N = 1 -> double-line | DH = 0 -> font-normal | IS = 0 -> normal
+		.equ init2, 0b00111001 # (0011 N DH X IS) -> N = 1 -> double-line | DH = 0 -> font-normal | IS = 1 -> extended
+		.equ init3, 0b00010100 # (0001 BS F2 F1 F0) -> BS = 0 -> 1/5 bias | F2,F1,F0 -> frequency suggested
+		.equ init4, 0b01111000 # (0111 C3 C2 C1 C0) -> contrast control
+		.equ init5, 0b01010011 # (0101 ION BON C5 C4) -> I = 0 -> cursor off | B = 0 -> booster off | C5, C4 -> con.
+		.equ init6, 0b01101010 # (0110 FON RB[2- 0]) -> fon = 0 -> follower off
+		.equ init7, 0b00001100 # (00001 D C B) -> D =1 -> display on | C = 0 -> cursor off | B = 0 -> not blink cursor
+		.equ init8, 0b00000110 # Define movimento do cursor para direita
+		.equ clear, 0x01 #Clear display -> '00000001'
+		.equ home, 0x02 #Bota o curso na posição '00' 00000010
+
+		#Definindo letras
+		.equ O, 0b01001111
+		.equ P, 0b01010000
+		.equ C, 0b01000011
+		.equ A, 0b01000001
+
+		#Definindo números
+		.equ um, 0b00110001
+		.equ dois, 0b00110010
+		.equ tres, 0b00110011
+		.equ quatro, 0b00110100
+		.equ cinco, 0b00110101
+
+		#Definindo símbolos
+		.equ seta, 0b11111100
+
+		# Nomeando registradores
+		# r1 -> armazenar o valor '1', valor genérico
+		# r2 -> armazenar o valor '2', usado para lógica dos botões
+		# r3 -> result da instrução custom
+		# r4 -> estado de 0 a 9 (em qual opção o usuário está)
+
+		# r10 -> armazena a base para as colunas
+		# r11 -> armazena a base para as linhas
+		# r12 -> armazena a base para as button
+
+		.global main
+		.text
+main:
+		movia r10, colunas
+		movia r11, linhas
+		movia r12, button
+
+		addi r1, r0, 1
+		addi r2, r0, 2
+
+		call init
+
+init:
+		custom 0, r3, r0, r2
+		movia r2, init1
+		custom 0, r3, r0, r2
+		movia r2, init2
+		custom 0, r3, r0, r2
+		movia r2, init3
+		custom 0, r3, r0, r2
+		movia r2, init4
+		custom 0, r3, r0, r2
+		movia r2, init5
+		custom 0, r3, r0, r2
+		movia r2, init6
+		custom 0, r3, r0, r2
+		movia r2, init7
+		custom 0, r3, r0, r2
+		movia r2, init8
+		custom 0, r3, r0, r2
+		movia r2, clear
+		custom 0, r3, r0, r2
+		movia r2, home
+		custom 0, r3, r0, r2
+
+		ret # Retorna para a main

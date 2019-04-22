@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="problema1">
+		<CBX_INST_ENTRY INSTANCE_NAME="|problema1|problema1_jtag:jtag|problema1_jtag_scfifo_w:the_problema1_jtag_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_jr21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|problema1|problema1_processor:processor|problema1_processor_nios2_oci:the_problema1_processor_nios2_oci|problema1_processor_nios2_ocimem:the_problema1_processor_nios2_ocimem|problema1_processor_ociram_sp_ram_module:problema1_processor_ociram_sp_ram|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_f591.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|problema1|problema1_processor:processor|problema1_processor_register_bank_a_module:problema1_processor_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_sug1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|problema1|problema1_processor:processor|problema1_processor_register_bank_b_module:problema1_processor_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_tug1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|problema1|problema1_jtag:jtag|problema1_jtag_scfifo_r:the_problema1_jtag_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_jr21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|problema1|problema1_memory:memory|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_2ac1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
