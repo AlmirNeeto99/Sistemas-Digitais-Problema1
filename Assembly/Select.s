@@ -1,6 +1,4 @@
 .data
-		vetor: .skip 10
-
 		.equ button, 0x2050 # Endereço base dos botões
 		.equ colunas, 0x2030 # Endereço base para a coluna
 		.equ linhas, 0x2040 # Endereço base para as linhas
@@ -17,9 +15,7 @@
 		.equ init7, 0b00001100 # c display on cursor off
 		.equ init8, 0b00000110 # 6 Entry mode L/R
 		.equ init9, 0b00000001 # 1 Clear
-			
-			
-			
+									
 		#Definindo letras
 		.equ O, 0b01001111
 		.equ P, 0b01010000
@@ -270,7 +266,6 @@ OP1:	movia r14, 0b10000010 #Coloca a seta na posição 2 da primeira linha.
 		movia r14, dois
 		custom 0, r3, r1, r14
 		addi r5, r0, 0 #Seta o estado para 0
-		#addi r15, r0, 1 #Neste ponto, foi feito um "up" nas opções, r15 carrega essa informação
 		ret
 		
 OP2:	movia r14, 0b11000010
@@ -293,7 +288,6 @@ OP2:	movia r14, 0b11000010
 		movia r14, dois
 		custom 0, r3, r1, r14
 		addi r5, r0, 1 #Seta o estado para 1
-		#addi r15, r0, 1 #Neste ponto, foi feito um "up" nas opções, r15 carrega essa informação
 		ret
 		
 OP3:	movia r14, 0b11000010
@@ -316,7 +310,6 @@ OP3:	movia r14, 0b11000010
 		movia r14, tres
 		custom 0, r3, r1, r14
 		addi r5, r0, 2 #Seta o estado para 2
-		#addi r15, r0, 1 #Neste ponto, foi feito um "up" nas opções, r15 carrega essa informação
 		ret
  
 OP4:	movia r14, 0b11000010
@@ -339,7 +332,6 @@ OP4:	movia r14, 0b11000010
 		movia r14, quatro
 		custom 0, r3, r1, r14
 		addi r5, r0, 3 #Seta o estado para 3
-		#addi r15, r0, 1 #Neste ponto, foi feito um "up" nas opções, r15 carrega essa informação
 		ret
  
 OP5:	movia r14, 0b11000010
@@ -362,7 +354,6 @@ OP5:	movia r14, 0b11000010
 		movia r14, cinco
 		custom 0, r3, r1, r14
 		addi r5, r0, 4 #Seta o estado para 4
-		#addi r15, r0, 1 #Neste ponto, foi feito um "up" nas opções, r15 carrega essa informação
 		ret
 
 init:
