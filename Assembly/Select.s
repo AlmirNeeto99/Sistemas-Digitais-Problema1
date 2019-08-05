@@ -50,7 +50,7 @@
 		modeCommand: .ascii "AT+CWMODE=1\n"
 		connectCommand: .ascii "AT+CWJAP_CUR=\"WLessLEDS\",\"HelloWorldMP31\"\n"
 		multiConnection: .ascii "AT+CIPMUX=0\n"
-		startCommand: .ascii "AT+CIPSTART=\"TCP\",\"192.168.1.101\",1889\n"
+		startCommand: .ascii "AT+CIPSTART=\"TCP\",\"192.168.1.201\",1883,1\n"
 		connectMqttCommand: .ascii "AT+CIPSENDEX=17\n"
 		publishCommand: .ascii "AT+CIPSENDEX=16\n"
 		echoOff: .ascii "ATE0\n"
@@ -178,25 +178,40 @@ setup:
 		addi r2, r0, 2
 		addi r4, r0, 4
 		addi r8, r0, 8
-		stb r1, 0(r10)
+		stb r0, 0(r10)
+		addi r15, r0, 0b11111111
+		stb r15, 0(r11)
 		movia r20, uart
-		call init
 		addi r5, r0, 32000
 		addi r10, r0, 10 # Coloca o decimal que representa um '\n', para comparar com o fim da string de comando.
 		call sendAt
 		call sendRST
+		addi r15, r0, 0b11111110
+		stb r15, 0(r11)
 		call sendEcho
 		call sendAuto
+		addi r15, r0, 0b11111100
+		stb r15, 0(r11)
 		call changeMode
 		call connectToWifi
+		addi r15, r0, 0b11111000
+		stb r15, 0(r11)
 		call sendMultiConnection
+		addi r15, r0, 0b11110000
+		stb r15, 0(r11)
 		call startTcp
 		call cipSendToConnect
+		addi r15, r0, 0b11100000
+		stb r15, 0(r11)
 		call mqttConnect
+
 main:
 		call init
 		call mminit
 		call OP1
+		addi r15, r0, 0b11111
+		stb r15, 0(r11)
+		addi r15, r0, 0
 
 mainmenu: #Gerencia os botões do menu principal
 		ldb r13, 0(r12) #Guarda a entrada dos botões em R13
@@ -569,10 +584,10 @@ readFromUart:
 
 oneSecondReturn:
 		mov r23, r0
-		movia r14, clear # Vai ser removido
-		custom 0, r3, r0, r14 # Vai ser removido
-		movia r14, 0b11000000 # Vai ser removido
-		custom 0, r3, r0, r14 # Vai ser removido
+		#movia r14, clear # Vai ser removido
+		#custom 0, r3, r0, r14 # Vai ser removido
+		#movia r14, 0b11000000 # Vai ser removido
+		#custom 0, r3, r0, r14 # Vai ser removido
 
 clearUart: # Limpa a uart após envio de comandos
 		call timeBetweenCharacters
@@ -590,10 +605,10 @@ uartFlag: # printa o retorno da esp na tela, será removido posteriormente
 		mov r23, r0
 		br clearUart
 
-oneSecond: #Loop de 1S = 50 000 000 * 20nS ~> 50 mil instruções.
-		addi r22, r0, 500
+oneSecond: #Loop de 1S = 50 000 000 * 20nS ~> 8,34 milhõe pulsos de instruções.
+		addi r22, r0, 1000
 externLoop:
-		addi r21, r0, 24996
+		addi r21, r0, 4167
 		subi r22, r22, 1
 		bne r22, r0, innerLoop
 		br oneSecondReturn
@@ -601,8 +616,9 @@ innerLoop:
 		subi r21, r21, 1
 		bne r21, r0, innerLoop
 		br externLoop
+
 timeBetweenCharacters: #BaudRate de 115200 -> aproximadamente 8,7*10^-6 S entre characteres. Para ClockTime=2nS, delay ~ 435Clocks ~ 435instruções.
-		addi r22, r0, 218
+		addi r22, r0, 216
 reduza:
 		subi r22, r22, 1
 		bne r22, r0, reduza
