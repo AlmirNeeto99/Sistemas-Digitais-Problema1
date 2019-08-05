@@ -1,5 +1,5 @@
 Flow report for problema1
-Mon Apr 15 16:56:42 2019
+Mon Jul 22 19:27:42 2019
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,20 +40,20 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Mon Apr 15 16:56:33 2019      ;
+; Flow Status                        ; Successful - Mon Jul 22 19:27:34 2019      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; problema1                                  ;
 ; Top-level Entity Name              ; problema1                                  ;
 ; Family                             ; Cyclone IV E                               ;
 ; Device                             ; EP4CE30F23C7                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 1,827 / 28,848 ( 6 % )                     ;
-;     Total combinational functions  ; 1,726 / 28,848 ( 6 % )                     ;
-;     Dedicated logic registers      ; 978 / 28,848 ( 3 % )                       ;
-; Total registers                    ; 978                                        ;
-; Total pins                         ; 23 / 329 ( 7 % )                           ;
+; Total logic elements               ; 2,130 / 28,848 ( 7 % )                     ;
+;     Total combinational functions  ; 2,027 / 28,848 ( 7 % )                     ;
+;     Dedicated logic registers      ; 1,160 / 28,848 ( 4 % )                     ;
+; Total registers                    ; 1160                                       ;
+; Total pins                         ; 25 / 329 ( 8 % )                           ;
 ; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 44,032 / 608,256 ( 7 % )                   ;
+; Total memory bits                  ; 46,080 / 608,256 ( 8 % )                   ;
 ; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                            ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                              ;
 +------------------------------------+--------------------------------------------+
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/15/2019 16:55:45 ;
+; Start date & time ; 07/22/2019 19:26:39 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; problema1           ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+-------------------------------------------------------------+---------------+--------------------------------------------------------------+------------+
 ; Assignment Name                     ; Value                                                       ; Default Value ; Entity Name                                                  ; Section Id ;
 +-------------------------------------+-------------------------------------------------------------+---------------+--------------------------------------------------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 31032330819179.155535814513224                              ; --            ; --                                                           ; --         ;
+; COMPILER_SIGNATURE_ID               ; 31032330819179.156383439903324                              ; --            ; --                                                           ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                        ; --            ; altera_avalon_sc_fifo                                        ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                        ; --            ; altera_customins_master_translator                           ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                        ; --            ; altera_customins_slave_translator                            ; --         ;
@@ -161,7 +161,7 @@ applicable agreement for further details.
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                ; --            ; --                                                           ; --         ;
 ; SLD_FILE                            ; problema1/synthesis/problema1.regmap                        ; --            ; --                                                           ; --         ;
 ; SLD_FILE                            ; problema1/synthesis/problema1.debuginfo                     ; --            ; --                                                           ; --         ;
-; SLD_INFO                            ; QSYS_NAME problema1 HAS_SOPCINFO 1 GENERATION_ID 1555358057 ; --            ; --                                                           ; --         ;
+; SLD_INFO                            ; QSYS_NAME problema1 HAS_SOPCINFO 1 GENERATION_ID 1563834362 ; --            ; --                                                           ; --         ;
 ; SOPCINFO_FILE                       ; problema1/synthesis/../../problema1.sopcinfo                ; --            ; --                                                           ; --         ;
 ; SYNTHESIS_ONLY_QIP                  ; On                                                          ; --            ; --                                                           ; --         ;
 +-------------------------------------+-------------------------------------------------------------+---------------+--------------------------------------------------------------+------------+
@@ -172,11 +172,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:18     ; 1.0                     ; 4766 MB             ; 00:00:16                           ;
-; Fitter                    ; 00:00:20     ; 1.1                     ; 5297 MB             ; 00:00:22                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4624 MB             ; 00:00:04                           ;
-; TimeQuest Timing Analyzer ; 00:00:05     ; 1.2                     ; 4739 MB             ; 00:00:05                           ;
-; Total                     ; 00:00:46     ; --                      ; --                  ; 00:00:47                           ;
+; Analysis & Synthesis      ; 00:00:22     ; 1.0                     ; 4782 MB             ; 00:00:20                           ;
+; Fitter                    ; 00:00:23     ; 1.1                     ; 5293 MB             ; 00:00:25                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 4628 MB             ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:06     ; 1.0                     ; 4735 MB             ; 00:00:05                           ;
+; Total                     ; 00:00:55     ; --                      ; --                  ; 00:00:53                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

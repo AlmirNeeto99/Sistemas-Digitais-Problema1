@@ -607,9 +607,9 @@ module problema1_processor_nios2_avalon_reg (
   always @(posedge clk or negedge reset_n)
     begin
       if (reset_n == 0)
-          oci_ienable <= 32'b00000000000000000000000000000001;
+          oci_ienable <= 32'b00000000000000000000000000000101;
       else if (take_action_oci_intr_mask_reg)
-          oci_ienable <= writedata | ~(32'b00000000000000000000000000000001);
+          oci_ienable <= writedata | ~(32'b00000000000000000000000000000101);
     end
 
 
@@ -4217,7 +4217,7 @@ module problema1_processor (
   assign E_ci_multi_reset = ~reset_n;
   assign E_ci_multi_reset_req = reset_req;
   //custom_instruction_master, which is an e_custom_instruction_master
-  assign iactive = d_irq[31 : 0] & 32'b00000000000000000000000000000001;
+  assign iactive = d_irq[31 : 0] & 32'b00000000000000000000000000000101;
   assign F_pc_sel_nxt = R_ctrl_exception                          ? 2'b00 :
     R_ctrl_break                              ? 2'b01 :
     (W_br_taken | R_ctrl_uncond_cti_non_br)   ? 2'b10 :
@@ -4843,9 +4843,9 @@ defparam problema1_processor_register_bank_b.lpm_file = "problema1_processor_rf_
 
   assign W_bstatus_reg_nxt = E_valid ? W_bstatus_reg_inst_nxt : W_bstatus_reg;
   assign W_ienable_reg_nxt = ((E_wrctl_ienable & E_valid) ? 
-    E_src1[31 : 0] : W_ienable_reg) & 32'b00000000000000000000000000000001;
+    E_src1[31 : 0] : W_ienable_reg) & 32'b00000000000000000000000000000101;
 
-  assign W_ipending_reg_nxt = iactive & W_ienable_reg & oci_ienable & 32'b00000000000000000000000000000001;
+  assign W_ipending_reg_nxt = iactive & W_ienable_reg & oci_ienable & 32'b00000000000000000000000000000101;
   always @(posedge clk or negedge reset_n)
     begin
       if (reset_n == 0)

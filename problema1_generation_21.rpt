@@ -1,0 +1,79 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/Prob1/ --output-directory=C:/Prob1/problema1/ --report-file=bsf:C:/Prob1/problema1.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE30F23C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Prob1/problema1.qsys
+Progress: Loading Prob1/problema1.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.1]
+Progress: Parameterizing module clk_0
+Progress: Adding processor [altera_nios2_qsys 13.1]
+Progress: Parameterizing module processor
+Progress: Adding memory [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module memory
+Progress: Adding jtag [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag
+Progress: Adding buttons [altera_avalon_pio 13.1]
+Progress: Parameterizing module buttons
+Progress: Adding linhas [altera_avalon_pio 13.1]
+Progress: Parameterizing module linhas
+Progress: Adding display_0 [display 1.0]
+Progress: Parameterizing module display_0
+Progress: Adding coluna [altera_avalon_pio 13.1]
+Progress: Parameterizing module coluna
+Progress: Adding rs232_0 [altera_up_avalon_rs232 13.0]
+Progress: Parameterizing module rs232_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: problema1.buttons: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/Prob1/ --output-directory=C:/Prob1/problema1/synthesis/ --file-set=QUARTUS_SYNTH --report-file=html:C:/Prob1/problema1.html --report-file=sopcinfo:C:/Prob1/problema1.sopcinfo --report-file=cmp:C:/Prob1/problema1.cmp --report-file=qip:C:/Prob1/problema1/synthesis/problema1.qip --report-file=svd --report-file=regmap:C:/Prob1/problema1/synthesis/problema1.regmap --report-file=debuginfo:C:/Prob1/problema1/synthesis/problema1.debuginfo --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE30F23C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Prob1/problema1.qsys --language=VERILOG
+Progress: Loading Prob1/problema1.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.1]
+Progress: Parameterizing module clk_0
+Progress: Adding processor [altera_nios2_qsys 13.1]
+Progress: Parameterizing module processor
+Progress: Adding memory [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module memory
+Progress: Adding jtag [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag
+Progress: Adding buttons [altera_avalon_pio 13.1]
+Progress: Parameterizing module buttons
+Progress: Adding linhas [altera_avalon_pio 13.1]
+Progress: Parameterizing module linhas
+Progress: Adding display_0 [display 1.0]
+Progress: Parameterizing module display_0
+Progress: Adding coluna [altera_avalon_pio 13.1]
+Progress: Parameterizing module coluna
+Progress: Adding rs232_0 [altera_up_avalon_rs232 13.0]
+Progress: Parameterizing module rs232_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: problema1.buttons: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: problema1: Generating problema1 "problema1" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 9 modules, 36 connections
+Info: merlin_custom_instruction_transform: After transform: 12 modules, 39 connections
+Info: merlin_initial_interconnect_transform: After transform: 8 modules, 33 connections
+Error: rs232_0_avalon_rs232_slave_translator.avalon_anti_slave_0: Cannot connect rs232_0_avalon_rs232_slave_translator.reset because rs232_0.clock_reset_reset is not connected 
+Info: merlin_translator_transform: After transform: 17 modules, 67 connections
+Info: merlin_domain_transform: After transform: 34 modules, 176 connections
+Info: merlin_router_transform: After transform: 43 modules, 212 connections
+Info: merlin_network_to_switch_transform: After transform: 60 modules, 267 connections
+Info: merlin_clock_and_reset_bridge_transform: After transform: 62 modules, 326 connections
+Info: merlin_hierarchy_transform: After transform: 13 modules, 37 connections
+Info: merlin_mm_transform: After transform: 13 modules, 37 connections
+Info: merlin_interrupt_mapper_transform: After transform: 14 modules, 41 connections
+Info: reset_adaptation_transform: After transform: 16 modules, 43 connections
+Warning: problema1: "No matching role found for processor_custom_instruction_master_translator:ci_slave:ci_slave_ipending (ipending)"
+Warning: problema1: "No matching role found for processor_custom_instruction_master_translator:ci_slave:ci_slave_estatus (estatus)"
+Warning: problema1: "No matching role found for processor_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_ipending (ipending)"
+Warning: problema1: "No matching role found for processor_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_estatus (estatus)"
+Error: Generation stopped, 14 or more modules remaining
+Info: problema1: Done "problema1" with 15 modules, 1 files, 65299 bytes
+Error: ip-generate failed with exit code 1: 2 Errors, 4 Warnings
+Info: Finished: Create HDL design files for synthesis

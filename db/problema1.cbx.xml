@@ -5,7 +5,9 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|problema1|problema1_processor:processor|problema1_processor_nios2_oci:the_problema1_processor_nios2_oci|problema1_processor_nios2_ocimem:the_problema1_processor_nios2_ocimem|problema1_processor_ociram_sp_ram_module:problema1_processor_ociram_sp_ram|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_f591.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|problema1|problema1_processor:processor|problema1_processor_register_bank_a_module:problema1_processor_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_sug1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|problema1|problema1_processor:processor|problema1_processor_register_bank_b_module:problema1_processor_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_tug1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|problema1|problema1_rs232_0:rs232_0|altera_up_rs232_in_deserializer:RS232_In_Deserializer|altera_up_sync_fifo:RS232_In_FIFO|scfifo:Sync_FIFO" CBX_FILE_NAME="scfifo_a341.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|problema1|problema1_jtag:jtag|problema1_jtag_scfifo_r:the_problema1_jtag_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_jr21.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|problema1|problema1_memory:memory|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_2ac1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|problema1|problema1_rs232_0:rs232_0|altera_up_rs232_out_serializer:RS232_Out_Serializer|altera_up_sync_fifo:RS232_Out_FIFO|scfifo:Sync_FIFO" CBX_FILE_NAME="scfifo_a341.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
