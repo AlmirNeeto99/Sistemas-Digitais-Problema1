@@ -3395,6 +3395,7 @@ module problema1_processor (
   wire             D_op_or;
   wire             D_op_orhi;
   wire             D_op_ori;
+  wire             D_op_random;
   wire             D_op_rdctl;
   wire             D_op_rdprs;
   wire             D_op_ret;
@@ -3610,6 +3611,7 @@ module problema1_processor (
   wire             F_op_or;
   wire             F_op_orhi;
   wire             F_op_ori;
+  wire             F_op_random;
   wire             F_op_rdctl;
   wire             F_op_rdprs;
   wire             F_op_ret;
@@ -3857,6 +3859,7 @@ module problema1_processor (
   problema1_processor_test_bench the_problema1_processor_test_bench
     (
       .D_iw                          (D_iw),
+      .D_iw_custom_n                 (D_iw_custom_n),
       .D_iw_op                       (D_iw_op),
       .D_iw_opx                      (D_iw_opx),
       .D_valid                       (D_valid),
@@ -4068,7 +4071,8 @@ module problema1_processor (
   assign F_op_rsvx56 = F_op_opx & (F_iw_opx == 56);
   assign F_op_rsvx60 = F_op_opx & (F_iw_opx == 60);
   assign F_op_rsvx63 = F_op_opx & (F_iw_opx == 63);
-  assign F_op_display_0 = F_op_custom & 1'b1;
+  assign F_op_display_0 = F_op_custom & ({F_iw_custom_n[0]} == 1'h0);
+  assign F_op_random = F_op_custom & ({F_iw_custom_n[0]} == 1'h1);
   assign F_op_opx = F_iw_op == 58;
   assign F_op_custom = F_iw_op == 50;
   assign D_op_call = D_iw_op == 0;
@@ -4197,7 +4201,8 @@ module problema1_processor (
   assign D_op_rsvx56 = D_op_opx & (D_iw_opx == 56);
   assign D_op_rsvx60 = D_op_opx & (D_iw_opx == 60);
   assign D_op_rsvx63 = D_op_opx & (D_iw_opx == 63);
-  assign D_op_display_0 = D_op_custom & 1'b1;
+  assign D_op_display_0 = D_op_custom & ({D_iw_custom_n[0]} == 1'h0);
+  assign D_op_random = D_op_custom & ({D_iw_custom_n[0]} == 1'h1);
   assign D_op_opx = D_iw_op == 58;
   assign D_op_custom = D_iw_op == 50;
   assign R_en = 1'b1;
@@ -4900,7 +4905,7 @@ defparam problema1_processor_register_bank_b.lpm_file = "problema1_processor_rf_
   //jtag_debug_module, which is an e_avalon_slave
   assign jtag_debug_module_clk = clk;
   assign jtag_debug_module_reset = ~reset_n;
-  assign D_ctrl_custom = D_op_display_0;
+  assign D_ctrl_custom = D_op_display_0|D_op_random;
   assign R_ctrl_custom_nxt = D_ctrl_custom;
   always @(posedge clk or negedge reset_n)
     begin
@@ -4911,7 +4916,7 @@ defparam problema1_processor_register_bank_b.lpm_file = "problema1_processor_rf_
     end
 
 
-  assign D_ctrl_custom_multi = D_op_display_0;
+  assign D_ctrl_custom_multi = D_op_display_0|D_op_random;
   assign R_ctrl_custom_multi_nxt = D_ctrl_custom_multi;
   always @(posedge clk or negedge reset_n)
     begin
@@ -5709,6 +5714,7 @@ defparam problema1_processor_register_bank_b.lpm_file = "problema1_processor_rf_
     (F_op_sra)? 72'h202020202020737261 :
     (F_op_intr)? 72'h2020202020696e7472 :
     (F_op_display_0)? 72'h646973706c61795f30 :
+    (F_op_random)? 72'h20202072616e646f6d :
     72'h202020202020424144;
 
   assign D_inst = (D_op_call)? 72'h202020202063616c6c :
@@ -5798,6 +5804,7 @@ defparam problema1_processor_register_bank_b.lpm_file = "problema1_processor_rf_
     (D_op_sra)? 72'h202020202020737261 :
     (D_op_intr)? 72'h2020202020696e7472 :
     (D_op_display_0)? 72'h646973706c61795f30 :
+    (D_op_random)? 72'h20202072616e646f6d :
     72'h202020202020424144;
 
   assign F_vinst = F_valid ? F_inst : {9{8'h2d}};

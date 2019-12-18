@@ -1,11 +1,11 @@
 
-State Machine - |problema1|display:display_0|estadoAtual
+State Machine - |TopLevel|problema1:inst|display:display_0|estadoAtual
 Name estadoAtual.01 estadoAtual.11 estadoAtual.00 
 estadoAtual.00 0 0 0 
 estadoAtual.01 1 0 1 
 estadoAtual.11 0 1 1 
 
-State Machine - |problema1|problema1_processor:processor|problema1_processor_nios2_oci:the_problema1_processor_nios2_oci|problema1_processor_jtag_debug_module_wrapper:the_problema1_processor_jtag_debug_module_wrapper|problema1_processor_jtag_debug_module_tck:the_problema1_processor_jtag_debug_module_tck|DRsize
+State Machine - |TopLevel|problema1:inst|problema1_processor:processor|problema1_processor_nios2_oci:the_problema1_processor_nios2_oci|problema1_processor_jtag_debug_module_wrapper:the_problema1_processor_jtag_debug_module_wrapper|problema1_processor_jtag_debug_module_tck:the_problema1_processor_jtag_debug_module_tck|DRsize
 Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
 DRsize.000 0 0 0 0 0 0 
 DRsize.001 0 0 0 0 1 1 

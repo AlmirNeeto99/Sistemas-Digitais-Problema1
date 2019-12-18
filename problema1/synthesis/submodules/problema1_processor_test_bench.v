@@ -21,6 +21,7 @@
 module problema1_processor_test_bench (
                                         // inputs:
                                          D_iw,
+                                         D_iw_custom_n,
                                          D_iw_op,
                                          D_iw_opx,
                                          D_valid,
@@ -55,6 +56,7 @@ module problema1_processor_test_bench (
   output  [ 31: 0] av_ld_data_aligned_filtered;
   output           test_has_ended;
   input   [ 31: 0] D_iw;
+  input   [  7: 0] D_iw_custom_n;
   input   [  5: 0] D_iw_op;
   input   [  5: 0] D_iw_opx;
   input            D_valid;
@@ -147,6 +149,7 @@ module problema1_processor_test_bench (
   wire             D_op_or;
   wire             D_op_orhi;
   wire             D_op_ori;
+  wire             D_op_random;
   wire             D_op_rdctl;
   wire             D_op_rdprs;
   wire             D_op_ret;
@@ -369,7 +372,8 @@ module problema1_processor_test_bench (
   assign D_op_rsvx56 = D_op_opx & (D_iw_opx == 56);
   assign D_op_rsvx60 = D_op_opx & (D_iw_opx == 60);
   assign D_op_rsvx63 = D_op_opx & (D_iw_opx == 63);
-  assign D_op_display_0 = D_op_custom & 1'b1;
+  assign D_op_display_0 = D_op_custom & ({D_iw_custom_n[0]} == 1'h0);
+  assign D_op_random = D_op_custom & ({D_iw_custom_n[0]} == 1'h1);
   assign D_op_opx = D_iw_op == 58;
   assign D_op_custom = D_iw_op == 50;
   assign test_has_ended = 1'b0;

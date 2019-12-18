@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE30F23C7
-set_global_assignment -name TOP_LEVEL_ENTITY problema1
+set_global_assignment -name TOP_LEVEL_ENTITY TopLevel
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:26:09  APRIL 09, 2019"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -49,9 +49,6 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
 set_location_assignment PIN_T1 -to clk_clk
 set_location_assignment PIN_V21 -to reset_reset_n
@@ -66,15 +63,41 @@ set_location_assignment PIN_V7 -to data_export[1]
 set_location_assignment PIN_V8 -to data_export[0]
 set_location_assignment PIN_V9 -to enable_export
 set_location_assignment PIN_U9 -to rs_export
-set_location_assignment PIN_U22 -to buttons_export[0]
-set_location_assignment PIN_U21 -to buttons_export[1]
-set_location_assignment PIN_W19 -to buttons_export[2]
-set_location_assignment PIN_Y17 -to buttons_export[3]
-set_location_assignment PIN_J7 -to coluna_export
-set_location_assignment PIN_F9 -to linhas_export[4]
-set_location_assignment PIN_G9 -to linhas_export[3]
-set_location_assignment PIN_E9 -to linhas_export[2]
-set_location_assignment PIN_C8 -to linhas_export[1]
-set_location_assignment PIN_F10 -to linhas_export[0]
+set_location_assignment PIN_A16 -to VGA_B[3]
+set_location_assignment PIN_B15 -to VGA_B[2]
+set_location_assignment PIN_A15 -to VGA_B[1]
+set_location_assignment PIN_B14 -to VGA_B[0]
+set_location_assignment PIN_A14 -to VGA_G[3]
+set_location_assignment PIN_B13 -to VGA_G[2]
+set_location_assignment PIN_A13 -to VGA_G[1]
+set_location_assignment PIN_C13 -to VGA_G[0]
+set_location_assignment PIN_B16 -to VGA_HS
+set_location_assignment PIN_B10 -to VGA_R[3]
+set_location_assignment PIN_A10 -to VGA_R[2]
+set_location_assignment PIN_C10 -to VGA_R[1]
+set_location_assignment PIN_A9 -to VGA_R[0]
+set_location_assignment PIN_A17 -to VGA_VS
+set_global_assignment -name VERILOG_FILE verilog/AD.v
 set_global_assignment -name QIP_FILE problema1/synthesis/problema1.qip
+set_global_assignment -name VERILOG_FILE verilog/vgaSync.v
+set_global_assignment -name VERILOG_FILE verilog/vgaPxlGen.v
+set_global_assignment -name VERILOG_FILE verilog/vgaDriver.v
+set_global_assignment -name VERILOG_FILE verilog/clk50to25.v
+set_global_assignment -name BDF_FILE TopLevel.bdf
+set_global_assignment -name BDF_FILE problema1/synthesis/pbl1.bdf
+set_location_assignment PIN_AB18 -to ADC_CNVST
+set_location_assignment PIN_AA17 -to ADC_CS_N
+set_location_assignment PIN_AA19 -to ADC_OUT[1]
+set_location_assignment PIN_AB19 -to ADC_OUT[0]
+set_location_assignment PIN_AB17 -to ADC_REFSEL
+set_location_assignment PIN_AA18 -to ADC_SCLK
+set_location_assignment PIN_AA16 -to ADC_SD
+set_location_assignment PIN_AB16 -to ADC_SEL
+set_location_assignment PIN_AB20 -to ADC_UB
+set_location_assignment PIN_Y22 -to ADC_RESET
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_V22 -to game_reset[0]
+set_location_assignment PIN_U22 -to game_reset[1]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

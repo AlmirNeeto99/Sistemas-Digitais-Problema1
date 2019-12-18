@@ -1,0 +1,213 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/AlmiroSembly/Sistemas-Digitais-Problema1/Sistemas-Digitais-Problema1/ --output-directory=C:/AlmiroSembly/Sistemas-Digitais-Problema1/Sistemas-Digitais-Problema1/problema1/ --report-file=bsf:C:/AlmiroSembly/Sistemas-Digitais-Problema1/Sistemas-Digitais-Problema1/problema1.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE30F23C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/AlmiroSembly/Sistemas-Digitais-Problema1/Sistemas-Digitais-Problema1/problema1.qsys
+Progress: Loading Sistemas-Digitais-Problema1/problema1.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.1]
+Progress: Parameterizing module clk_0
+Progress: Adding processor [altera_nios2_qsys 13.1]
+Progress: Parameterizing module processor
+Progress: Adding memory [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module memory
+Progress: Adding jtag [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag
+Progress: Adding display_0 [display 1.0]
+Progress: Parameterizing module display_0
+Progress: Adding YPlayer1 [altera_avalon_pio 13.1]
+Progress: Parameterizing module YPlayer1
+Progress: Adding YPlayer2 [altera_avalon_pio 13.1]
+Progress: Parameterizing module YPlayer2
+Progress: Adding XBola [altera_avalon_pio 13.1]
+Progress: Parameterizing module XBola
+Progress: Adding YBola [altera_avalon_pio 13.1]
+Progress: Parameterizing module YBola
+Progress: Adding endframe [altera_avalon_pio 13.1]
+Progress: Parameterizing module endframe
+Progress: Adding AD0 [altera_avalon_pio 13.1]
+Progress: Parameterizing module AD0
+Progress: Adding AD1 [altera_avalon_pio 13.1]
+Progress: Parameterizing module AD1
+Progress: Adding ADC_BUSY [altera_avalon_pio 13.1]
+Progress: Parameterizing module ADC_BUSY
+Progress: Adding random [random 1.0]
+Progress: Parameterizing module random
+Progress: Adding button [altera_avalon_pio 13.1]
+Progress: Parameterizing module button
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: problema1.endframe: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: problema1.AD0: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: problema1.AD1: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: problema1.ADC_BUSY: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: problema1.button: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/AlmiroSembly/Sistemas-Digitais-Problema1/Sistemas-Digitais-Problema1/ --output-directory=C:/AlmiroSembly/Sistemas-Digitais-Problema1/Sistemas-Digitais-Problema1/problema1/synthesis/ --file-set=QUARTUS_SYNTH --report-file=html:C:/AlmiroSembly/Sistemas-Digitais-Problema1/Sistemas-Digitais-Problema1/problema1.html --report-file=sopcinfo:C:/AlmiroSembly/Sistemas-Digitais-Problema1/Sistemas-Digitais-Problema1/problema1.sopcinfo --report-file=cmp:C:/AlmiroSembly/Sistemas-Digitais-Problema1/Sistemas-Digitais-Problema1/problema1.cmp --report-file=qip:C:/AlmiroSembly/Sistemas-Digitais-Problema1/Sistemas-Digitais-Problema1/problema1/synthesis/problema1.qip --report-file=svd --report-file=regmap:C:/AlmiroSembly/Sistemas-Digitais-Problema1/Sistemas-Digitais-Problema1/problema1/synthesis/problema1.regmap --report-file=debuginfo:C:/AlmiroSembly/Sistemas-Digitais-Problema1/Sistemas-Digitais-Problema1/problema1/synthesis/problema1.debuginfo --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE30F23C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/AlmiroSembly/Sistemas-Digitais-Problema1/Sistemas-Digitais-Problema1/problema1.qsys --language=VERILOG
+Progress: Loading Sistemas-Digitais-Problema1/problema1.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.1]
+Progress: Parameterizing module clk_0
+Progress: Adding processor [altera_nios2_qsys 13.1]
+Progress: Parameterizing module processor
+Progress: Adding memory [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module memory
+Progress: Adding jtag [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag
+Progress: Adding display_0 [display 1.0]
+Progress: Parameterizing module display_0
+Progress: Adding YPlayer1 [altera_avalon_pio 13.1]
+Progress: Parameterizing module YPlayer1
+Progress: Adding YPlayer2 [altera_avalon_pio 13.1]
+Progress: Parameterizing module YPlayer2
+Progress: Adding XBola [altera_avalon_pio 13.1]
+Progress: Parameterizing module XBola
+Progress: Adding YBola [altera_avalon_pio 13.1]
+Progress: Parameterizing module YBola
+Progress: Adding endframe [altera_avalon_pio 13.1]
+Progress: Parameterizing module endframe
+Progress: Adding AD0 [altera_avalon_pio 13.1]
+Progress: Parameterizing module AD0
+Progress: Adding AD1 [altera_avalon_pio 13.1]
+Progress: Parameterizing module AD1
+Progress: Adding ADC_BUSY [altera_avalon_pio 13.1]
+Progress: Parameterizing module ADC_BUSY
+Progress: Adding random [random 1.0]
+Progress: Parameterizing module random
+Progress: Adding button [altera_avalon_pio 13.1]
+Progress: Parameterizing module button
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: problema1.endframe: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: problema1.AD0: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: problema1.AD1: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: problema1.ADC_BUSY: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: problema1.button: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: problema1: Generating problema1 "problema1" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 15 modules, 63 connections
+Info: merlin_custom_instruction_transform: After transform: 19 modules, 67 connections
+Info: merlin_initial_interconnect_transform: After transform: 13 modules, 60 connections
+Info: merlin_translator_transform: After transform: 27 modules, 116 connections
+Info: merlin_domain_transform: After transform: 54 modules, 290 connections
+Info: merlin_router_transform: After transform: 68 modules, 346 connections
+Info: merlin_network_to_switch_transform: After transform: 95 modules, 436 connections
+Info: merlin_clock_and_reset_bridge_transform: After transform: 97 modules, 532 connections
+Info: merlin_hierarchy_transform: After transform: 20 modules, 60 connections
+Info: merlin_mm_transform: After transform: 20 modules, 60 connections
+Info: merlin_interrupt_mapper_transform: After transform: 21 modules, 64 connections
+Info: reset_adaptation_transform: After transform: 23 modules, 66 connections
+Warning: problema1: "No matching role found for processor_custom_instruction_master_translator:ci_slave:ci_slave_ipending (ipending)"
+Warning: problema1: "No matching role found for processor_custom_instruction_master_translator:ci_slave:ci_slave_estatus (estatus)"
+Warning: problema1: "No matching role found for processor_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_ipending (ipending)"
+Warning: problema1: "No matching role found for processor_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_estatus (estatus)"
+Info: processor: Starting RTL generation for module 'problema1_processor'
+Info: processor:   Generation command is [exec C:/altera/13.1/quartus/bin/eperlcmd.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=problema1_processor --dir=C:/Users/csacl/AppData/Local/Temp/alt8153_6733559715381041840.dir/0001_processor_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/csacl/AppData/Local/Temp/alt8153_6733559715381041840.dir/0001_processor_gen//problema1_processor_processor_configuration.pl  --do_build_sim=0  ]
+Info: processor: # 2019.09.14 03:03:32 (*) Starting Nios II generation
+Info: processor: # 2019.09.14 03:03:32 (*)   Checking for plaintext license.
+Info: processor: # 2019.09.14 03:03:35 (*)   Couldn't query license setup in Quartus directory C:/altera/13.1/quartus
+Info: processor: # 2019.09.14 03:03:35 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: processor: # 2019.09.14 03:03:35 (*)   LM_LICENSE_FILE environment variable is empty
+Info: processor: # 2019.09.14 03:03:36 (*)   Plaintext license not found.
+Info: processor: # 2019.09.14 03:03:36 (*)   No license required to generate encrypted Nios II/e.
+Info: processor: # 2019.09.14 03:03:36 (*)   Elaborating CPU configuration settings
+Info: processor: # 2019.09.14 03:03:36 (*)   Creating all objects for CPU
+Info: processor: # 2019.09.14 03:03:38 (*)   Generating RTL from CPU objects
+Info: processor: # 2019.09.14 03:03:38 (*)   Creating plain-text RTL
+Info: processor: # 2019.09.14 03:03:40 (*) Done Nios II generation
+Info: processor: Done RTL generation for module 'problema1_processor'
+Info: processor: "problema1" instantiated altera_nios2_qsys "processor"
+Info: memory: Starting RTL generation for module 'problema1_memory'
+Info: memory:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=problema1_memory --dir=C:/Users/csacl/AppData/Local/Temp/alt8153_6733559715381041840.dir/0002_memory_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/csacl/AppData/Local/Temp/alt8153_6733559715381041840.dir/0002_memory_gen//problema1_memory_component_configuration.pl  --do_build_sim=0  ]
+Info: memory: Done RTL generation for module 'problema1_memory'
+Info: memory: "problema1" instantiated altera_avalon_onchip_memory2 "memory"
+Info: jtag: Starting RTL generation for module 'problema1_jtag'
+Info: jtag:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=problema1_jtag --dir=C:/Users/csacl/AppData/Local/Temp/alt8153_6733559715381041840.dir/0003_jtag_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/csacl/AppData/Local/Temp/alt8153_6733559715381041840.dir/0003_jtag_gen//problema1_jtag_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag: Done RTL generation for module 'problema1_jtag'
+Info: jtag: "problema1" instantiated altera_avalon_jtag_uart "jtag"
+Info: display_0: "problema1" instantiated display "display_0"
+Info: YPlayer1: Starting RTL generation for module 'problema1_YPlayer1'
+Info: YPlayer1:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=problema1_YPlayer1 --dir=C:/Users/csacl/AppData/Local/Temp/alt8153_6733559715381041840.dir/0005_YPlayer1_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/csacl/AppData/Local/Temp/alt8153_6733559715381041840.dir/0005_YPlayer1_gen//problema1_YPlayer1_component_configuration.pl  --do_build_sim=0  ]
+Info: YPlayer1: Done RTL generation for module 'problema1_YPlayer1'
+Info: YPlayer1: "problema1" instantiated altera_avalon_pio "YPlayer1"
+Info: endframe: Starting RTL generation for module 'problema1_endframe'
+Info: endframe:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=problema1_endframe --dir=C:/Users/csacl/AppData/Local/Temp/alt8153_6733559715381041840.dir/0006_endframe_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/csacl/AppData/Local/Temp/alt8153_6733559715381041840.dir/0006_endframe_gen//problema1_endframe_component_configuration.pl  --do_build_sim=0  ]
+Info: endframe: Done RTL generation for module 'problema1_endframe'
+Info: endframe: "problema1" instantiated altera_avalon_pio "endframe"
+Info: AD0: Starting RTL generation for module 'problema1_AD0'
+Info: AD0:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=problema1_AD0 --dir=C:/Users/csacl/AppData/Local/Temp/alt8153_6733559715381041840.dir/0007_AD0_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/csacl/AppData/Local/Temp/alt8153_6733559715381041840.dir/0007_AD0_gen//problema1_AD0_component_configuration.pl  --do_build_sim=0  ]
+Info: AD0: Done RTL generation for module 'problema1_AD0'
+Info: AD0: "problema1" instantiated altera_avalon_pio "AD0"
+Info: random: "problema1" instantiated random "random"
+Info: button: Starting RTL generation for module 'problema1_button'
+Info: button:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=problema1_button --dir=C:/Users/csacl/AppData/Local/Temp/alt8153_6733559715381041840.dir/0009_button_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/csacl/AppData/Local/Temp/alt8153_6733559715381041840.dir/0009_button_gen//problema1_button_component_configuration.pl  --do_build_sim=0  ]
+Info: button: Done RTL generation for module 'problema1_button'
+Info: button: "problema1" instantiated altera_avalon_pio "button"
+Info: processor_custom_instruction_master_translator: "problema1" instantiated altera_customins_master_translator "processor_custom_instruction_master_translator"
+Info: processor_custom_instruction_master_multi_xconnect: "problema1" instantiated altera_customins_xconnect "processor_custom_instruction_master_multi_xconnect"
+Info: processor_custom_instruction_master_multi_slave_translator0: "problema1" instantiated altera_customins_slave_translator "processor_custom_instruction_master_multi_slave_translator0"
+Info: pipeline_bridge_swap_transform: After transform: 84 modules, 305 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 84 modules, 305 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 84 modules, 305 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 84 modules, 305 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 84 modules, 305 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 84 modules, 305 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 84 modules, 305 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 84 modules, 305 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 84 modules, 305 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 84 modules, 305 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 84 modules, 305 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 84 modules, 305 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 84 modules, 305 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 84 modules, 305 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 84 modules, 305 connections
+Info: mm_interconnect_0: "problema1" instantiated altera_merlin_interconnect_wrapper "mm_interconnect_0"
+Info: irq_mapper: "problema1" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "problema1" instantiated altera_reset_controller "rst_controller"
+Info: processor_instruction_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "processor_instruction_master_translator"
+Info: processor_jtag_debug_module_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "processor_jtag_debug_module_translator"
+Info: processor_instruction_master_translator_avalon_universal_master_0_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "processor_instruction_master_translator_avalon_universal_master_0_agent"
+Info: processor_jtag_debug_module_translator_avalon_universal_slave_0_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "processor_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: processor_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "processor_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "mm_interconnect_0" instantiated altera_merlin_router "addr_router"
+Info: id_router: "mm_interconnect_0" instantiated altera_merlin_router "id_router"
+Info: cmd_xbar_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file C:/AlmiroSembly/Sistemas-Digitais-Problema1/Sistemas-Digitais-Problema1/problema1/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: problema1: Done "problema1" with 27 modules, 41 files, 1157709 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

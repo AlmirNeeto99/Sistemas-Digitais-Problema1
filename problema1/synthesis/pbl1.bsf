@@ -1,0 +1,127 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 288 240)
+	(text "pbl1" (rect 5 0 28 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 208 25 220)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk_clk" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 21 27 58 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "reset_reset_n" (rect 0 0 80 14)(font "Arial" (font_size 8)))
+		(text "reset_reset_n" (rect 21 43 101 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "buttons_export[3..0]" (rect 0 0 114 14)(font "Arial" (font_size 8)))
+		(text "buttons_export[3..0]" (rect 21 59 135 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "endframe_export" (rect 0 0 97 14)(font "Arial" (font_size 8)))
+		(text "endframe_export" (rect 21 75 118 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 272 32)
+		(output)
+		(text "linhas_export[4..0]" (rect 0 0 105 14)(font "Arial" (font_size 8)))
+		(text "linhas_export[4..0]" (rect 146 27 251 41)(font "Arial" (font_size 8)))
+		(line (pt 272 32)(pt 256 32)(line_width 3))
+	)
+	(port
+		(pt 272 48)
+		(output)
+		(text "data_export[7..0]" (rect 0 0 96 14)(font "Arial" (font_size 8)))
+		(text "data_export[7..0]" (rect 155 43 251 57)(font "Arial" (font_size 8)))
+		(line (pt 272 48)(pt 256 48)(line_width 3))
+	)
+	(port
+		(pt 272 64)
+		(output)
+		(text "enable_export" (rect 0 0 81 14)(font "Arial" (font_size 8)))
+		(text "enable_export" (rect 170 59 251 73)(font "Arial" (font_size 8)))
+		(line (pt 272 64)(pt 256 64))
+	)
+	(port
+		(pt 272 80)
+		(output)
+		(text "rs_export" (rect 0 0 55 14)(font "Arial" (font_size 8)))
+		(text "rs_export" (rect 196 75 251 89)(font "Arial" (font_size 8)))
+		(line (pt 272 80)(pt 256 80))
+	)
+	(port
+		(pt 272 96)
+		(output)
+		(text "rw_export" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "rw_export" (rect 191 91 251 105)(font "Arial" (font_size 8)))
+		(line (pt 272 96)(pt 256 96))
+	)
+	(port
+		(pt 272 112)
+		(output)
+		(text "coluna_export" (rect 0 0 81 14)(font "Arial" (font_size 8)))
+		(text "coluna_export" (rect 170 107 251 121)(font "Arial" (font_size 8)))
+		(line (pt 272 112)(pt 256 112))
+	)
+	(port
+		(pt 272 128)
+		(output)
+		(text "y1_export[9..0]" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "y1_export[9..0]" (rect 165 123 251 137)(font "Arial" (font_size 8)))
+		(line (pt 272 128)(pt 256 128)(line_width 3))
+	)
+	(port
+		(pt 272 144)
+		(output)
+		(text "y2_export[9..0]" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "y2_export[9..0]" (rect 165 139 251 153)(font "Arial" (font_size 8)))
+		(line (pt 272 144)(pt 256 144)(line_width 3))
+	)
+	(port
+		(pt 272 160)
+		(output)
+		(text "xbola_export[9..0]" (rect 0 0 102 14)(font "Arial" (font_size 8)))
+		(text "xbola_export[9..0]" (rect 149 155 251 169)(font "Arial" (font_size 8)))
+		(line (pt 272 160)(pt 256 160)(line_width 3))
+	)
+	(port
+		(pt 272 176)
+		(output)
+		(text "ybola_export[9..0]" (rect 0 0 102 14)(font "Arial" (font_size 8)))
+		(text "ybola_export[9..0]" (rect 149 171 251 185)(font "Arial" (font_size 8)))
+		(line (pt 272 176)(pt 256 176)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 256 208))
+	)
+)

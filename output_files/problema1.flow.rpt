@@ -1,5 +1,5 @@
 Flow report for problema1
-Mon Apr 15 16:56:42 2019
+Sat Sep 14 03:47:36 2019
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Mon Apr 15 16:56:33 2019      ;
+; Flow Status                        ; Successful - Sat Sep 14 03:47:20 2019      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; problema1                                  ;
-; Top-level Entity Name              ; problema1                                  ;
+; Top-level Entity Name              ; TopLevel                                   ;
 ; Family                             ; Cyclone IV E                               ;
 ; Device                             ; EP4CE30F23C7                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 1,827 / 28,848 ( 6 % )                     ;
-;     Total combinational functions  ; 1,726 / 28,848 ( 6 % )                     ;
-;     Dedicated logic registers      ; 978 / 28,848 ( 3 % )                       ;
-; Total registers                    ; 978                                        ;
-; Total pins                         ; 23 / 329 ( 7 % )                           ;
+; Total logic elements               ; 2,569 / 28,848 ( 9 % )                     ;
+;     Total combinational functions  ; 2,406 / 28,848 ( 8 % )                     ;
+;     Dedicated logic registers      ; 1,337 / 28,848 ( 5 % )                     ;
+; Total registers                    ; 1337                                       ;
+; Total pins                         ; 39 / 329 ( 12 % )                          ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 44,032 / 608,256 ( 7 % )                   ;
 ; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                            ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/15/2019 16:55:45 ;
+; Start date & time ; 09/14/2019 03:46:10 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; problema1           ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+-------------------------------------------------------------+---------------+--------------------------------------------------------------+------------+
 ; Assignment Name                     ; Value                                                       ; Default Value ; Entity Name                                                  ; Section Id ;
 +-------------------------------------+-------------------------------------------------------------+---------------+--------------------------------------------------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 31032330819179.155535814513224                              ; --            ; --                                                           ; --         ;
+; COMPILER_SIGNATURE_ID               ; 31032330819179.156844356908500                              ; --            ; --                                                           ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                        ; --            ; altera_avalon_sc_fifo                                        ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                        ; --            ; altera_customins_master_translator                           ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                        ; --            ; altera_customins_slave_translator                            ; --         ;
@@ -85,11 +85,12 @@ applicable agreement for further details.
 ; IP_TOOL_ENV                         ; Qsys                                                        ; --            ; altera_merlin_slave_translator                               ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                        ; --            ; altera_reset_controller                                      ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                        ; --            ; --                                                           ; --         ;
-; IP_TOOL_ENV                         ; Qsys                                                        ; --            ; problema1_buttons                                            ; --         ;
-; IP_TOOL_ENV                         ; Qsys                                                        ; --            ; problema1_coluna                                             ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                        ; --            ; problema1_AD0                                                ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                        ; --            ; problema1_YPlayer1                                           ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                        ; --            ; problema1_button                                             ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                        ; --            ; problema1_endframe                                           ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                        ; --            ; problema1_irq_mapper                                         ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                        ; --            ; problema1_jtag                                               ; --         ;
-; IP_TOOL_ENV                         ; Qsys                                                        ; --            ; problema1_linhas                                             ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                        ; --            ; problema1_memory                                             ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                        ; --            ; problema1_mm_interconnect_0                                  ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                        ; --            ; problema1_mm_interconnect_0_addr_router                      ; --         ;
@@ -109,11 +110,12 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                        ; altera_merlin_slave_translator                              ; --            ; altera_merlin_slave_translator                               ; --         ;
 ; IP_TOOL_NAME                        ; altera_reset_controller                                     ; --            ; altera_reset_controller                                      ; --         ;
 ; IP_TOOL_NAME                        ; Qsys                                                        ; --            ; --                                                           ; --         ;
-; IP_TOOL_NAME                        ; altera_avalon_pio                                           ; --            ; problema1_buttons                                            ; --         ;
-; IP_TOOL_NAME                        ; altera_avalon_pio                                           ; --            ; problema1_coluna                                             ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_pio                                           ; --            ; problema1_AD0                                                ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_pio                                           ; --            ; problema1_YPlayer1                                           ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_pio                                           ; --            ; problema1_button                                             ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_pio                                           ; --            ; problema1_endframe                                           ; --         ;
 ; IP_TOOL_NAME                        ; altera_irq_mapper                                           ; --            ; problema1_irq_mapper                                         ; --         ;
 ; IP_TOOL_NAME                        ; altera_avalon_jtag_uart                                     ; --            ; problema1_jtag                                               ; --         ;
-; IP_TOOL_NAME                        ; altera_avalon_pio                                           ; --            ; problema1_linhas                                             ; --         ;
 ; IP_TOOL_NAME                        ; altera_avalon_onchip_memory2                                ; --            ; problema1_memory                                             ; --         ;
 ; IP_TOOL_NAME                        ; altera_merlin_interconnect_wrapper                          ; --            ; problema1_mm_interconnect_0                                  ; --         ;
 ; IP_TOOL_NAME                        ; altera_merlin_router                                        ; --            ; problema1_mm_interconnect_0_addr_router                      ; --         ;
@@ -133,11 +135,12 @@ applicable agreement for further details.
 ; IP_TOOL_VERSION                     ; 13.1                                                        ; --            ; altera_merlin_slave_translator                               ; --         ;
 ; IP_TOOL_VERSION                     ; 13.1                                                        ; --            ; altera_reset_controller                                      ; --         ;
 ; IP_TOOL_VERSION                     ; 13.1                                                        ; --            ; --                                                           ; --         ;
-; IP_TOOL_VERSION                     ; 13.1                                                        ; --            ; problema1_buttons                                            ; --         ;
-; IP_TOOL_VERSION                     ; 13.1                                                        ; --            ; problema1_coluna                                             ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                        ; --            ; problema1_AD0                                                ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                        ; --            ; problema1_YPlayer1                                           ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                        ; --            ; problema1_button                                             ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                                                        ; --            ; problema1_endframe                                           ; --         ;
 ; IP_TOOL_VERSION                     ; 13.1                                                        ; --            ; problema1_irq_mapper                                         ; --         ;
 ; IP_TOOL_VERSION                     ; 13.1                                                        ; --            ; problema1_jtag                                               ; --         ;
-; IP_TOOL_VERSION                     ; 13.1                                                        ; --            ; problema1_linhas                                             ; --         ;
 ; IP_TOOL_VERSION                     ; 13.1                                                        ; --            ; problema1_memory                                             ; --         ;
 ; IP_TOOL_VERSION                     ; 13.1                                                        ; --            ; problema1_mm_interconnect_0                                  ; --         ;
 ; IP_TOOL_VERSION                     ; 13.1                                                        ; --            ; problema1_mm_interconnect_0_addr_router                      ; --         ;
@@ -153,17 +156,18 @@ applicable agreement for further details.
 ; MISC_FILE                           ; problema1/synthesis/../../problema1.cmp                     ; --            ; --                                                           ; --         ;
 ; MISC_FILE                           ; problema1/synthesis/../../problema1.qsys                    ; --            ; --                                                           ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                                        ; --            ; --                                                           ; --         ;
-; PARTITION_COLOR                     ; 16764057                                                    ; --            ; --                                                           ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                       ; --            ; --                                                           ; Top        ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                                      ; --            ; --                                                           ; Top        ;
+; PARTITION_COLOR                     ; 16764057                                                    ; --            ; TopLevel                                                     ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                       ; --            ; TopLevel                                                     ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                      ; --            ; TopLevel                                                     ; Top        ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                         ; --            ; --                                                           ; --         ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                       ; --            ; --                                                           ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                ; --            ; --                                                           ; --         ;
 ; SLD_FILE                            ; problema1/synthesis/problema1.regmap                        ; --            ; --                                                           ; --         ;
 ; SLD_FILE                            ; problema1/synthesis/problema1.debuginfo                     ; --            ; --                                                           ; --         ;
-; SLD_INFO                            ; QSYS_NAME problema1 HAS_SOPCINFO 1 GENERATION_ID 1555358057 ; --            ; --                                                           ; --         ;
+; SLD_INFO                            ; QSYS_NAME problema1 HAS_SOPCINFO 1 GENERATION_ID 1568440997 ; --            ; --                                                           ; --         ;
 ; SOPCINFO_FILE                       ; problema1/synthesis/../../problema1.sopcinfo                ; --            ; --                                                           ; --         ;
 ; SYNTHESIS_ONLY_QIP                  ; On                                                          ; --            ; --                                                           ; --         ;
+; TOP_LEVEL_ENTITY                    ; TopLevel                                                    ; problema1     ; --                                                           ; --         ;
 +-------------------------------------+-------------------------------------------------------------+---------------+--------------------------------------------------------------+------------+
 
 
@@ -172,11 +176,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:18     ; 1.0                     ; 4766 MB             ; 00:00:16                           ;
-; Fitter                    ; 00:00:20     ; 1.1                     ; 5297 MB             ; 00:00:22                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4624 MB             ; 00:00:04                           ;
-; TimeQuest Timing Analyzer ; 00:00:05     ; 1.2                     ; 4739 MB             ; 00:00:05                           ;
-; Total                     ; 00:00:46     ; --                      ; --                  ; 00:00:47                           ;
+; Analysis & Synthesis      ; 00:00:22     ; 1.0                     ; 4772 MB             ; 00:00:20                           ;
+; Fitter                    ; 00:00:33     ; 1.1                     ; 5263 MB             ; 00:00:31                           ;
+; Assembler                 ; 00:00:07     ; 1.0                     ; 4617 MB             ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:11     ; 1.0                     ; 4715 MB             ; 00:00:09                           ;
+; Total                     ; 00:01:13     ; --                      ; --                  ; 00:01:06                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

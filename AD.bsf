@@ -1,0 +1,120 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 264 224)
+	(text "AD" (rect 5 0 20 12)(font "Arial" ))
+	(text "inst" (rect 8 192 20 204)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "RESET_n" (rect 0 0 44 12)(font "Arial" ))
+		(text "RESET_n" (rect 21 27 65 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLOCK_50MHz" (rect 0 0 68 12)(font "Arial" ))
+		(text "CLOCK_50MHz" (rect 21 43 89 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "ADC_OUT[1..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "ADC_OUT[1..0]" (rect 21 59 88 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 248 32)
+		(output)
+		(text "ADC_CNVST" (rect 0 0 62 12)(font "Arial" ))
+		(text "ADC_CNVST" (rect 165 27 227 39)(font "Arial" ))
+		(line (pt 248 32)(pt 232 32)(line_width 1))
+	)
+	(port
+		(pt 248 48)
+		(output)
+		(text "ADC_CS_N" (rect 0 0 54 12)(font "Arial" ))
+		(text "ADC_CS_N" (rect 173 43 227 55)(font "Arial" ))
+		(line (pt 248 48)(pt 232 48)(line_width 1))
+	)
+	(port
+		(pt 248 64)
+		(output)
+		(text "ADC_REFSEL" (rect 0 0 68 12)(font "Arial" ))
+		(text "ADC_REFSEL" (rect 159 59 227 71)(font "Arial" ))
+		(line (pt 248 64)(pt 232 64)(line_width 1))
+	)
+	(port
+		(pt 248 80)
+		(output)
+		(text "ADC_SCLK" (rect 0 0 54 12)(font "Arial" ))
+		(text "ADC_SCLK" (rect 173 75 227 87)(font "Arial" ))
+		(line (pt 248 80)(pt 232 80)(line_width 1))
+	)
+	(port
+		(pt 248 96)
+		(output)
+		(text "ADC_SD" (rect 0 0 41 12)(font "Arial" ))
+		(text "ADC_SD" (rect 186 91 227 103)(font "Arial" ))
+		(line (pt 248 96)(pt 232 96)(line_width 1))
+	)
+	(port
+		(pt 248 112)
+		(output)
+		(text "ADC_UB" (rect 0 0 41 12)(font "Arial" ))
+		(text "ADC_UB" (rect 186 107 227 119)(font "Arial" ))
+		(line (pt 248 112)(pt 232 112)(line_width 1))
+	)
+	(port
+		(pt 248 128)
+		(output)
+		(text "ADC_SEL" (rect 0 0 47 12)(font "Arial" ))
+		(text "ADC_SEL" (rect 180 123 227 135)(font "Arial" ))
+		(line (pt 248 128)(pt 232 128)(line_width 1))
+	)
+	(port
+		(pt 248 144)
+		(output)
+		(text "BUSY" (rect 0 0 25 12)(font "Arial" ))
+		(text "BUSY" (rect 202 139 227 151)(font "Arial" ))
+		(line (pt 248 144)(pt 232 144)(line_width 1))
+	)
+	(port
+		(pt 248 160)
+		(output)
+		(text "DATA_AD0[7..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "DATA_AD0[7..0]" (rect 152 155 227 167)(font "Arial" ))
+		(line (pt 248 160)(pt 232 160)(line_width 3))
+	)
+	(port
+		(pt 248 176)
+		(output)
+		(text "DATA_AD1[7..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "DATA_AD1[7..0]" (rect 153 171 227 183)(font "Arial" ))
+		(line (pt 248 176)(pt 232 176)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 232 192)(line_width 1))
+	)
+)

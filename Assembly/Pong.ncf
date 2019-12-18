@@ -4,7 +4,7 @@
         <system_info filepath="true">..\problema1.sopcinfo</system_info>
         <system_sof filepath="true">..\output_files\problema1.sof</system_sof>
         <system_jdi filepath="true">..\output_files\problema1.jdi</system_jdi>
-        <cable>null</cable>
+        <cable>USB-Blaster [USB-0]</cable>
         <processor JTAGHubInstanceID="0">processor</processor>
         <elf_section name="text">
             <memory_device>memory/s1</memory_device>
@@ -20,7 +20,7 @@
         <type>ASSEMBLY</type>
         <options>
             <source_files>
-                <source_file filepath="true">Select.s</source_file>
+                <source_file filepath="true">Pong.s</source_file>
             </source_files>
             <start_symbol>main</start_symbol>
         </options>
